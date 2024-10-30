@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image Metadata Viewer</title>
+</head>
+<body>
+    <h1>Image Metadata Viewer</h1>
+    <input type="text" id="folderPath" placeholder="Enter folder path">
+    <button onclick="getMetadata()">Get Metadata</button>
+
+    <table id="metadataTable" border="1">
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Image Size (px)</th>
+                <th>Resolution (dpi)</th>
+                <th>Color Depth</th>
+                <th>Compression</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
